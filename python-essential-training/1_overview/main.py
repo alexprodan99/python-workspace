@@ -39,5 +39,13 @@ def main():
     a, b = b, a + b
     print(a)
     print(b)
+    
+    words = ['aaa', 'bbb', 'ccc']
+    for word in words:
+        print (word)
+    for i in range(len(words)):
+        print(words[i])
+    for i in range(0, len(words)):
+        print(words[i])
 
 if __name__ == '__main__': main()
