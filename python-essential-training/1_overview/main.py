@@ -4,5 +4,11 @@
 # another way to write this line (hardcoded path to python)
 #!/usr/local/bin/python3
 import platform
-# for getting operating system and python version details
-print('hello world. We are on {} and python version is: {}'.format(platform.platform(), platform.python_version()))
+
+
+def main():
+    # for getting operating system and python version details
+    print('hello world. We are on {} and python version is: {}'.format(platform.platform(), platform.python_version()))
+
+
+if __name__ == '__main__': main()
