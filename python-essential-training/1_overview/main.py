@@ -74,5 +74,11 @@ def main():
     donald.quack()
     print(donald.age) # 10
     
+    
+    print(type(1)) # <class 'int'>
+    print(type('str'))
+    print(type(2.2))
+    print(type(donald))
+    
 
 if __name__ == '__main__': main()
