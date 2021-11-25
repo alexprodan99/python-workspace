@@ -17,5 +17,14 @@ def main():
     if 1 < 2:
         z = 2
     print(z)
+    x = 10
+    y = 20
+    if x < y:
+        print("{} is less than {}".format(x,y))
+    elif x > y:
+        print("{} is greater than {}".format(x,y))
+    else:
+        print("{} is equal to {}".format(x,y))
+        
 
 if __name__ == '__main__': main()
