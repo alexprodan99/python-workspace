@@ -9,6 +9,9 @@ import platform
 def main():
     # for getting operating system and python version details
     print('hello world. We are on {} and python version is: {}'.format(platform.platform(), platform.python_version()))
-
+    var = 2
+    print('Hello world %d' %var)
+    print(f'Hello world {var}')
+    print('Hello world %d %d %d' %(var, var, var))
 
 if __name__ == '__main__': main()
