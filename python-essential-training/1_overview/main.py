@@ -4,7 +4,12 @@
 # another way to write this line (hardcoded path to python)
 #!/usr/local/bin/python3
 import platform
+import random
 
+# when you are declaring a default value
+# pay attention that first parameter can have a default value only if all parameters after it has a default value
+def generate_random_int(low, high=10):
+    return random.randint(low, high)
 
 def main():
     # for getting operating system and python version details
@@ -47,5 +52,7 @@ def main():
         print(words[i])
     for i in range(0, len(words)):
         print(words[i])
+        
+    print('my random number is {}'.format(generate_random_int(0)))
 
 if __name__ == '__main__': main()
