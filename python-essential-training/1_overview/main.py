@@ -6,6 +6,20 @@
 import platform
 import random
 
+class Duck:
+    # self is not defined here
+    age = 10
+    # by default if you have multiple __init__ functions python will consider just the last defined one
+    # you can declaare in just one single __init__function *args and handle all cases inside one single class constructor
+    def __init__(self, name):
+        self.name = name
+
+    def quack(self):
+        print(f'{self.name} is quacking!')
+    def walk(self):
+        print(f'{self.name} is walking!');
+
+
 # when you are declaring a default value
 # pay attention that first parameter can have a default value only if all parameters after it has a default value
 def generate_random_int(low, high=10):
@@ -54,5 +68,11 @@ def main():
         print(words[i])
         
     print('my random number is {}'.format(generate_random_int(0)))
+    
+    donald = Duck('donald')
+    donald.walk()
+    donald.quack()
+    print(donald.age) # 10
+    
 
 if __name__ == '__main__': main()
