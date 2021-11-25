@@ -13,5 +13,9 @@ def main():
     print('Hello world %d' %var)
     print(f'Hello world {var}')
     print('Hello world %d %d %d' %(var, var, var))
+    # blocks are not defining scope in python (functions does)
+    if 1 < 2:
+        z = 2
+    print(z)
 
 if __name__ == '__main__': main()
