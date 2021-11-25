@@ -26,5 +26,18 @@ def main():
     else:
         print("{} is equal to {}".format(x,y))
         
+    # loops => while + for
+    n = 0
+    while (n < 5):
+        print(n)
+        n += 1
+    
+    a = 1
+    b = 2
+    # it will get in a + b previous value of a, not the updated one
+    # so that you will not need to declare aux variables
+    a, b = b, a + b
+    print(a)
+    print(b)
 
 if __name__ == '__main__': main()
