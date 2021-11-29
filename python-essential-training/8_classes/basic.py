@@ -1,4 +1,5 @@
 class Animal:
+    static_arr = [1,2,3]
     def __init__(self, **kargs):
         self._type = kargs['type'] if 'type' in kargs else 'generic_animal'
         self._name = kargs['name'] if 'name' in kargs else 'generic_name'
@@ -14,7 +15,12 @@ class Animal:
 
 def main():
     my_animal = Animal(type="pig", name="george", sound="grwwow")
+    my_generic_animal = Animal()
+    
+    my_animal.static_arr[0] = 999
+    
     print (my_animal.name())
+    print (my_generic_animal.static_arr)
     
 if __name__ == '__main__':
     main()
