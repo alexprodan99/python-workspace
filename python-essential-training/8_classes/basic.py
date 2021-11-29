@@ -5,11 +5,14 @@ class Animal:
         self._name = kargs['name'] if 'name' in kargs else 'generic_name'
         self._sound = kargs['sound'] if 'sound' in kargs else 'generic sound'
         
-    def type(self):
+    def type(self, t=None):
+        if t: self._type = t
         return self._type
-    def name(self):
+    def name(self, n=None):
+        if n: self._name = n
         return self._name
-    def sound(self):
+    def sound(self, s):
+        if s: self._sound = s
         return self._sound
     
 
@@ -22,5 +25,7 @@ def main():
     print (my_animal.name())
     print (my_generic_animal.static_arr)
     
+    my_animal.name('alex')
+    print(my_animal.name())   
 if __name__ == '__main__':
     main()
