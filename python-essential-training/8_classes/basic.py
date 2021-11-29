@@ -33,6 +33,11 @@ class Duck(Animal):
         if 'type' in kargs: del kargs['type']
         super().__init__(**kargs)
 
+# reverse string class that extends str
+class RevStr(str):
+    def __str__(self):
+        return self[::-1]
+
 def main():
     my_animal = Animal(type="pig", name="george", sound="grwwow")
     my_generic_animal = Animal()
@@ -47,6 +52,10 @@ def main():
     
     duck = Duck(name="fred", sound="whoack")
     
-    print(duck.type())   
+    print(duck.type())
+    
+    my_str = RevStr("abc")
+    print(my_str) # cba
+    
 if __name__ == '__main__':
     main()
