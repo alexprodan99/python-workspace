@@ -17,3 +17,10 @@ print(b2.get_price())
 
 print (type(b1) == type(b2)) # True
 print (isinstance(b1, Book)) # True
+
+print (f'BOOK_TYPES={Book.get_book_types()}')
+
+books = Book.get_book_list()
+books.append(b1)
+books.append(b2)
+print(books)
