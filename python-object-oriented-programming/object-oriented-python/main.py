@@ -15,3 +15,5 @@ print(b2.get_price())
 # print(b2.__secret) => error
 # print(b2._Book__secret) # you will access __secret, but you shouldn't
 
+print (type(b1) == type(b2)) # True
+print (isinstance(b1, Book)) # True
