@@ -20,6 +20,11 @@ def main():
     # you cannot have duplicate keys in Fruits (you can have duplicate values if you are not having unique decorator!)
     print(Fruit.PEAR.name) # PEAR
     print(Fruit.PEAR.value) # 4
+    
+    my_fruits = {}
+    my_fruits[Fruit.BANANA] = 'BANANA'
+    
+    print(my_fruits[Fruit.BANANA])
 
 if __name__ == '__main__':
     main()
