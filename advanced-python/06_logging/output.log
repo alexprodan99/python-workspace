@@ -1,5 +1,5 @@
-DEBUG:root:Debug message
-INFO:root:Info message
-WARNING:root:Warning message
-ERROR:root:Error message
-CRITICAL:root:Critical message
+User: aprodan 12/08/2021 11:41:54 PM: DEBUG: <module> Line:10 Debug message
+User: aprodan 12/08/2021 11:41:54 PM: INFO: <module> Line:11 Info message
+User: aprodan 12/08/2021 11:41:54 PM: WARNING: <module> Line:12 Warning message
+User: aprodan 12/08/2021 11:41:54 PM: ERROR: <module> Line:13 Error message
+User: aprodan 12/08/2021 11:41:54 PM: CRITICAL: <module> Line:14 Critical message
